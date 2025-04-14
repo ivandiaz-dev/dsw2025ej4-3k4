@@ -5,6 +5,7 @@
 package views;
 
 import java.util.ArrayList;
+import javax.swing.JFrame;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -19,6 +20,7 @@ public class ListarAnimalesView extends javax.swing.JFrame {
     public ListarAnimalesView() {
         initComponents();
         listarAnimales();
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
     private void listarAnimales(){
         ArrayList<AnimalViewModel> animales = Controlador.getAnimales();
@@ -136,13 +138,11 @@ public class ListarAnimalesView extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(calcularComida, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addComponent(calcularComida, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
