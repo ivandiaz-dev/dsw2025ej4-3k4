@@ -5,7 +5,9 @@
 package views;
 
 import static java.time.Clock.system;
+
 import javax.swing.JFrame;
+
 import javax.swing.JOptionPane;
 import static javax.swing.JOptionPane.showConfirmDialog;
 
@@ -20,8 +22,8 @@ public class Menu extends javax.swing.JFrame {
      */
     public Menu() {
         initComponents();
-        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**
@@ -132,7 +134,7 @@ public class Menu extends javax.swing.JFrame {
         
                 ListarAnimalesView ventana = new ListarAnimalesView();
                         ventana.setVisible(true);
-                   // this.dispose();
+
       
     }//GEN-LAST:event_btnListarAnimalesActionPerformed
 
@@ -142,9 +144,11 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSalirActionPerformed
 
     private void btnAgregarAnimalesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarAnimalesActionPerformed
+
         AgregarAnimalesView ventana1 = new AgregarAnimalesView();
         ventana1.setVisible(true);
         //this.dispose();
+
         
     }//GEN-LAST:event_btnAgregarAnimalesActionPerformed
 

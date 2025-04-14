@@ -47,7 +47,6 @@ public class Persistencia {
         inicializarEspecies();
         inicializarSectores();
         inicializarPaises();
-        //inicializarAnimales();
        
     }
 

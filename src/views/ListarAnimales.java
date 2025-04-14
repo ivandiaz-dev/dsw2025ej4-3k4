@@ -17,6 +17,7 @@ public class ListarAnimales extends javax.swing.JFrame {
      */
     public ListarAnimales() {
         initComponents();
+
                 setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
     }
