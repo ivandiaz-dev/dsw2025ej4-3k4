@@ -4,24 +4,20 @@
  */
 package domain;
 
-/**
- *
- * @author ivand
- */
 public class Pais {
-    private String nombre;
-    private String ISO;
-    
-    public Pais(String nombre, String ISO){
+    private final String nombre;
+    private final String codigoIso;
+
+    public Pais(String nombre, String codigoIso) {
         this.nombre = nombre;
-        this.ISO = ISO;
+        this.codigoIso = codigoIso;
+
     }
 
     public String getNombre() {
         return nombre;
     }
-
-    public String getISO() {
-        return ISO;
+    public String getCodigoIso() {
+        return codigoIso;
     }
 }
